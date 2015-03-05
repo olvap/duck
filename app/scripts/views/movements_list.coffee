@@ -1,19 +1,11 @@
 'use strict';
 
 class Duck.Views.MovementsList extends Backbone.View
-
-  template: JST['app/scripts/templates/movements_list.ejs']
-
-  tagName: 'div'
-
-  id: ''
-
-  className: ''
-
-  events: {}
-
-  initialize: () ->
-    @listenTo @model, 'change', @render
+  el: '.page',
 
   render: () ->
-    @$el.html @template(@model.toJSON())
+    that = @
+    movements = new Duck.Collections.Movements
+    movements.fetch success: ->
+      template = _.template($('#movement-list-template').html())(movements: movements.models)
+      that.$el.html template
