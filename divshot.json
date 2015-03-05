@@ -1,0 +1,10 @@
+{
+  "name": "duck",
+  "root": "./app",
+  "clean_urls": false,
+  "error_page": "error.html",
+  "exclude": ["Gruntfile.js", "node_modules"],
+  "routes": {
+    "**": "index.html"
+  }
+}
