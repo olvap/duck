@@ -3,7 +3,7 @@
   "root": "./app",
   "clean_urls": false,
   "error_page": "error.html",
-  "exclude": ["Gruntfile.js", "node_modules"],
+  "exclude": ["Gruntfile.js", "node_modules", "app/bower_components"],
   "routes": {
     "**": "index.html"
   }
