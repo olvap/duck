@@ -1,5 +1,3 @@
-'use strict';
-
 class Duck.Views.MovementsList extends Backbone.View
   el: '.page',
 
