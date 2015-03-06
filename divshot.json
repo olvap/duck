@@ -1,6 +1,6 @@
 {
   "name": "duck",
-  "root": "./app",
+  "root": "./dist",
   "clean_urls": false,
   "error_page": "error.html",
   "exclude": ["Gruntfile.js", "node_modules", "app/bower_components"],
